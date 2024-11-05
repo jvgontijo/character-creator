@@ -1,4 +1,5 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+import '../../src/styles.css'
 
 class CharacterForm extends Component {
   state = {
@@ -13,7 +14,7 @@ class CharacterForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted", this.state);
+    console.log('Form submitted', this.state);
   };
 
   render() {

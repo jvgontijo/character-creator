@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CharacterList from './components/CharacterList';
 import CharacterForm from './components/CharacterForm';
+import '../src/styles.css'
 
 function App() {
   const [characters] = useState([
@@ -13,7 +14,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="container">
       <h1>RPG Character Manager</h1>
       <CharacterList characters={characters} onEdit={handleEdit} />
       <CharacterForm />
